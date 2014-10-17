@@ -18,7 +18,7 @@ class Calculation
     public function getOperation($operationName)
     {
         if (!isset($this->operations[$operationName])) {
-            throw new \Exception("{$operationName} is not supported!");
+            throw new \Exception("The operation \"{$operationName}\" is not supported!");
         }
 
         return $this->operations[$operationName];
