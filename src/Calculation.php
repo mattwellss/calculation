@@ -23,4 +23,9 @@ class Calculation
 
         return $this->operations[$operationName];
     }
+
+    public function getOperations()
+    {
+        return $this->operations;
+    }
 }
